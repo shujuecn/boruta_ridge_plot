@@ -69,7 +69,8 @@ imp_history = as_tibble(boruta_selection$ImpHistory) |>
     values_to = "importance"
   ) |>
   filter(is.finite(importance)) |>
-  left_join(all_decision, by = "feature")
+  left_join(all_decision, by = "feature") |>
+  mutate(decision = factor(decision, levels = c("Confirmed", "Tentative", "Rejected", "Shadow")))
 
 # 根据每个特征的中位数重要性排序
 feature_order = imp_history |>
