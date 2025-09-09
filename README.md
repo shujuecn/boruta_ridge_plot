@@ -6,7 +6,7 @@
 * `Boruta` 特征选择：基于 `ranger` 随机森林，识别重要特征，并标注为 `Confirmed`、`Tentative` 或 `Rejected`。
 * 特征重要性可视化：使用 `ggridges` 绘制山脊图，展示不同特征在多次迭代中的重要性分布，按 **中位数（圆点）** 排序。
 
-:rotating_light: Demo 中将 `Borata()` 函数 `maxRuns` 参数设置为 50 以快速出图，使用时按需调整，避免影响算法效果！！
+:rotating_light: Demo 中将 `Boruta()` 函数 `maxRuns` 参数设置为 50 以快速出图，使用时按需调整，避免影响算法效果！！
 
 ![](./boruta_importance_ridge.jpg)
 
